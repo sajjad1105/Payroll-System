@@ -1,0 +1,39 @@
+.loginsignup-container {
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 500px; /* Increased padding for better spacing */
+}
+
+.card {
+    border: 1px solid #dee2e6; 
+    width: 560px;
+    padding: 10px;/* Light border around the card */
+}
+
+@media (max-width: 768px) {
+    .loginsignup-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Make the card full width on small screens */
+    }
+}
+
+.btn {
+    transition: background-color 0.3s ease; /* Smooth button transition */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darken the primary button on hover */
+}
+
+.btn-success:hover {
+    background-color: #4CAF50; /* Darken the success button on hover */
+}
+
+hr {
+    height: 2px;
+    background-color: #007bff; /* Primary color for the separator line */
+}

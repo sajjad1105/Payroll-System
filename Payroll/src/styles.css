@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+/* Add the following CSS to your styles.css file */
+.card {
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.text-primary {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card .btn {
+    font-size: 16px;
+    border-radius: 25px;
+}
+/* Custom Box Styling */
+.custom-box {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Hover Effect: Increase Shadow Intensity and Scale Up */
+  .hover-box:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+
+  .card-body {
+    padding: 30px 20px; /* Increased padding for better spacing */
+  }
+  
+  /* Border Customization */
+  .border {
+    border-color: #e0e0e0 !important;
+  }
+  
+  /* Button Styling */
+  .btn-primary, .btn-success {
+    border-radius: 25px; /* Rounded button styles */
+    padding: 10px 20px;
+  }
+  .container{
+    max-width: 600px; /* Set maximum width of container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+    position: relative;
+    top: 200px;
+  }

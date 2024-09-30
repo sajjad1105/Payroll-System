@@ -1,0 +1,53 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+      <div class="col-lg-5 col-md-6 col-sm-8 col-12">
+          <div class="card shadow-lg border-0">
+              <div class="card-body p-5">
+                  <div class="text-center mb-4">
+                      <h2 class="text-primary fw-bold">Login / Signup</h2>
+                      <hr class="my-4">
+                  </div>
+                  <div class="loginsignup-container">
+                      <!-- REGISTER FORM -->
+                      <form *ngIf="activeForm === 'register'" class="border p-4 rounded shadow-sm">
+                          <h4 class="text-center text-secondary mb-3">Create an Account</h4>
+                          <div class="form-group mb-3">
+                              <label for="name" class="form-label fw-semibold">Name</label>
+                              <input type="text" name="name" class="form-control shadow-sm" [(ngModel)]="registerObj.name" placeholder="Enter your name">
+                          </div>
+                          <div class="form-group mb-3">
+                              <label for="email" class="form-label fw-semibold">ID</label>
+                              <input type="email" name="email" class="form-control shadow-sm" [(ngModel)]="registerObj.email" placeholder="Enter your email">
+                          </div>
+                          <div class="form-group mb-4">
+                              <label for="password" class="form-label fw-semibold">Password</label>
+                              <input type="password" name="password" class="form-control shadow-sm" [(ngModel)]="registerObj.password" placeholder="Enter your password">
+                          </div>
+                          <button type="submit" class="btn btn-primary w-100 rounded-pill mb-3" (click)="registerForm()">Register</button>
+                          <p class="text-center text-muted" (click)="toggleForm('login')">
+                              Already have an account? <span class="text-info fw-bold" style="cursor: pointer;">LOGIN</span>
+                          </p>
+                      </form>
+
+                      <!-- LOGIN FORM -->
+                      <form *ngIf="activeForm === 'login'" class="border p-4 rounded shadow-sm">
+                          <h4 class="text-center text-secondary mb-3">Welcome Back!</h4>
+                          <div class="form-group mb-3">
+                              <label for="email" class="form-label fw-semibold">ID</label>
+                              <input type="email" name="email" class="form-control shadow-sm" [(ngModel)]="loginObj.email" placeholder="Enter your email">
+                          </div>
+                          <div class="form-group mb-4">
+                              <label for="password" class="form-label fw-semibold">Password</label>
+                              <input type="password" name="password" class="form-control shadow-sm" [(ngModel)]="loginObj.password" placeholder="Enter your password">
+                          </div>
+                          <button type="submit" class="btn btn-success w-100 rounded-pill mb-3" (click)="loginForm()">Login</button>
+                          <p class="text-center text-muted" (click)="toggleForm('register')">
+                              Don't have an account? <span class="text-info fw-bold" style="cursor: pointer;">REGISTER</span>
+                          </p>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
